@@ -1,0 +1,11 @@
+<a href="#/about">about</a>
+<ul ng-controller="homeworkController">
+    <li ng-repeat="homework in Homeworks"  ng-click=clickOnName(homework)>
+        Name: {{homework.assignment}}
+        <div ng-show="showDetails[homework.assignment]">
+            URI: {{homework.url}}
+            <br>
+            Status: {{homework.status}}
+        </div>
+    </li>
+</ul>
